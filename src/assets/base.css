@@ -3,7 +3,14 @@
   --color-secondary: hsl(285, 66%, 52%);
 
   --color-dark: hsl(0, 0%, 14%);
+  --color-dark-h: 0;
+  --color-dark-s: 0%;
+  --color-dark-l: 14%;
+
   --color-light: hsl(0, 0%, 100%);
+  --color-light-h: 0;
+  --color-light-s: 0%;
+  --color-light-l: 100%;
 
   --step--2: clamp(0.87rem, calc(0.83rem + 0.17vw), 0.96rem);
   --step--1: clamp(1.04rem, calc(0.98rem + 0.29vw), 1.2rem);
@@ -22,7 +29,9 @@
   --color-text: var(--color-light);
   --color-divider: var(--color-primary);
 
-  --color-navbar: var(--color-light);
+  --color-navbar: hsla(var(--color-light-h), var(--color-light-s), var(--color-light-l), 0.8);
+  --color-hamburger-expanded: var(--color-light);
+  --color-hamburger-collapsed: var(--color-dark);
   --color-navbar-text: var(--color-dark);
 }
 
@@ -33,7 +42,9 @@
     --color-text: var(--color-dark);
     --color-divider: var(--color-secondary);
 
-    --color-navbar: var(--color-dark);
+    --color-navbar: hsla(var(--color-dark-h), var(--color-dark-s), var(--color-dark-l), 0.8);
+    --color-hamburger-expanded: var(--color-dark);
+    --color-hamburger-collapsed: var(--color-light);
     --color-navbar-text: var(--color-light);
   }
 }

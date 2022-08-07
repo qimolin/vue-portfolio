@@ -1,9 +1,6 @@
 <template>
   <header class="header">
-    <div class="logo-container">
-      <img alt="Website logo" src="@/assets/logo.svg" width="100" height="100" />
-      <h1 aria-hidden="true">Qi Mo Lin</h1>
-    </div>
+    <img alt="Website logo" src="@/assets/logo.svg" width="100" height="100" />
     <input
       id="toggle-menu"
       type="checkbox"
@@ -46,11 +43,6 @@ function setHamburgerExpanded() {
   justify-content: space-between;
   align-items: center;
   height: 10rem;
-}
-.logo-container {
-  display: flex;
-  align-items: center;
-  font-size: var(--step--1);
 }
 #toggle-menu {
   display: none;
@@ -107,7 +99,7 @@ function setHamburgerExpanded() {
     place-content: center;
     height: 100vh;
     gap: 3rem;
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--color-navbar);
     backdrop-filter: blur(0.5rem);
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
@@ -146,7 +138,7 @@ function setHamburgerExpanded() {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: var(--color-navbar);
+    background: var(--color-hamburger-expanded);
     border-radius: 3px;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -159,16 +151,16 @@ function setHamburgerExpanded() {
     transform-origin: 0% 100%;
   }
   #toggle-menu:checked ~ .hamburger span:nth-child(1) {
-    background: var(--color-navbar-text);
+    background: var(--color-hamburger-collapsed);
     transform: rotate(45deg) translate(2.5px, -1.5px);
   }
   #toggle-menu:checked ~ .hamburger span:nth-child(2) {
-    background: var(--color-navbar-text);
+    background: var(--color-hamburger-collapsed);
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
   #toggle-menu:checked ~ .hamburger span:nth-child(3) {
-    background: var(--color-navbar-text);
+    background: var(--color-hamburger-collapsed);
     transform: rotate(-45deg) translate(-4px, 2.5px);
   }
   #toggle-menu:checked ~ nav .nav-list {
