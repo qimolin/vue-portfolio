@@ -1,5 +1,9 @@
 :root {
   --color-primary: hsl(37, 98%, 54%);
+  --color-primary-h: 37;
+  --color-primary-s: 98%;
+  --color-primary-l: 54%;
+
   --color-secondary: hsl(285, 66%, 52%);
 
   --color-dark: hsl(0, 0%, 14%);
@@ -12,41 +16,26 @@
   --color-light-s: 0%;
   --color-light-l: 100%;
 
-  --step--2: clamp(0.87rem, calc(0.83rem + 0.17vw), 0.96rem);
-  --step--1: clamp(1.04rem, calc(0.98rem + 0.29vw), 1.2rem);
-  --step-0: clamp(1.25rem, calc(1.16rem + 0.45vw), 1.5rem);
-  --step-1: clamp(1.5rem, calc(1.36rem + 0.68vw), 1.88rem);
-  --step-2: clamp(1.8rem, calc(1.6rem + 0.99vw), 2.34rem);
-  --step-3: clamp(2.16rem, calc(1.88rem + 1.4vw), 2.93rem);
-  --step-4: clamp(2.59rem, calc(2.2rem + 1.95vw), 3.66rem);
-  --step-5: clamp(3.11rem, calc(2.58rem + 2.67vw), 4.58rem);
+  --step--2: clamp(0.63rem, calc(0.44rem + 0.95vw), 1.58rem);
+  --step--1: clamp(0.84rem, calc(0.66rem + 0.93vw), 1.78rem);
+  --step-0: clamp(1.13rem, calc(0.95rem + 0.88vw), 2rem);
+  --step-1: clamp(1.5rem, calc(1.35rem + 0.75vw), 2.25rem);
+  --step-2: clamp(2rem, calc(1.89rem + 0.53vw), 2.53rem);
+  --step-3: clamp(2.66rem, calc(2.63rem + 0.18vw), 2.85rem);
+  --step-4: clamp(3.2rem, calc(3.62rem + -0.35vw), 3.55rem);
+  --step-5: clamp(3.6rem, calc(4.96rem + -1.13vw), 4.74rem);
 }
 
-/* dark theme */
 :root {
-  --color-background: var(--color-dark);
-
-  --color-text: var(--color-light);
-  --color-divider: var(--color-primary);
+  --color-text-dark-bg: var(--color-light);
+  --color-text-light-bg: var(--color-dark);
+  --color-divider-dark-bg: var(--color-primary);
+  --color-divider-light-bg: var(--color-secondary);
 
   --color-navbar: hsla(var(--color-light-h), var(--color-light-s), var(--color-light-l), 0.8);
   --color-hamburger-expanded: var(--color-light);
   --color-hamburger-collapsed: var(--color-dark);
   --color-navbar-text: var(--color-dark);
-}
-
-/* light theme */
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-text: var(--color-dark);
-    --color-divider: var(--color-secondary);
-
-    --color-navbar: hsla(var(--color-dark-h), var(--color-dark-s), var(--color-dark-l), 0.8);
-    --color-hamburger-expanded: var(--color-dark);
-    --color-hamburger-collapsed: var(--color-light);
-    --color-navbar-text: var(--color-light);
-  }
 }
 
 *,

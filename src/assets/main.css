@@ -3,24 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,200;1,400&display=swap");
 
 body {
-  min-height: 100vh;
   font-family: "Raleway", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background: var(--color-background);
-  color: var(--color-text);
-}
-
-#app {
-  margin-inline: auto;
-  padding-inline: max(5vh, 1rem) 6rem;
+  background: var(--color-dark);
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-text);
+}
+
+p {
+  font-size: var(--step--1);
 }
 
 .sr-only {
