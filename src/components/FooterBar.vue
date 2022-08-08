@@ -41,10 +41,12 @@ a {
   align-items: center;
   gap: 1rem;
 }
-@media (min-height: 1025px) {
+@media (max-width: 1025px) {
   footer {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
   }
 }
 </style>
