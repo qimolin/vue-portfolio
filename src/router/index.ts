@@ -5,20 +5,25 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
+      name: "Home",
       component: () => import("@/views/HomeView.vue"),
     },
     {
       path: "/about",
-      name: "about",
+      name: "About",
       component: () => import("@/views/AboutView.vue"),
     },
     {
       path: "/projects",
-      name: "projects",
+      name: "Projects",
       component: () => import("@/views/ProjectsView.vue"),
     },
   ],
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = `Qi Mo Lin - ${String(to.name)}`;
+  next();
 });
 
 export default router;
