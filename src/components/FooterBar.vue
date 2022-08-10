@@ -23,8 +23,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: max(2vh, 2rem);
-  height: max(10vh, 2rem);
+  padding-inline: max(2vw, 2rem);
+  height: max(12vh, 2rem);
+  width: 100%;
   color: var(--color-text-dark-bg);
 }
 p {

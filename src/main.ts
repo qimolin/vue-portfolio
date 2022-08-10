@@ -8,6 +8,12 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faWordpress,
+  faNodeJs,
+  faDocker,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -17,7 +23,19 @@ const app = createApp(App);
 
 app.use(router);
 
-library.add(faHeart, faEnvelope, faLinkedin, faGithub, faTwitter);
+library.add(
+  faHeart,
+  faEnvelope,
+  faLinkedin,
+  faGithub,
+  faTwitter,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faWordpress,
+  faNodeJs,
+  faDocker
+);
 
 app.component("font-awesome-icon", FontAwesomeIcon);
 

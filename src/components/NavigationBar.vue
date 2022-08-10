@@ -42,9 +42,9 @@ function setHamburgerExpanded() {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 10rem;
   padding-inline: 6rem;
-  overflow: hidden;
 }
 #toggle-menu {
   display: none;
@@ -88,7 +88,6 @@ function setHamburgerExpanded() {
 }
 @media (max-width: 1025px) {
   .header {
-    height: 8rem;
     padding-inline: 1rem;
   }
   .nav-list {

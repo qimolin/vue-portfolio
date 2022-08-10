@@ -16,14 +16,14 @@
   --color-light-s: 0%;
   --color-light-l: 100%;
 
-  --step--2: clamp(0.63rem, calc(0.44rem + 0.95vw), 1.58rem);
-  --step--1: clamp(0.84rem, calc(0.66rem + 0.93vw), 1.78rem);
-  --step-0: clamp(1.13rem, calc(0.95rem + 0.88vw), 2rem);
-  --step-1: clamp(1.5rem, calc(1.35rem + 0.75vw), 2.25rem);
-  --step-2: clamp(2rem, calc(1.89rem + 0.53vw), 2.53rem);
-  --step-3: clamp(2.66rem, calc(2.63rem + 0.18vw), 2.85rem);
-  --step-4: clamp(3.2rem, calc(3.62rem + -0.35vw), 3.55rem);
-  --step-5: clamp(3.6rem, calc(4.96rem + -1.13vw), 4.74rem);
+  --step--3: clamp(0.58rem, calc(0.47rem + 0.56vw), 1.14rem);
+  --step--2: clamp(0.69rem, calc(0.58rem + 0.59vw), 1.28rem);
+  --step--1: clamp(0.83rem, calc(0.71rem + 0.61vw), 1.44rem);
+  --step-0: clamp(1rem, calc(0.88rem + 0.63vw), 1.63rem);
+  --step-1: clamp(1.2rem, calc(1.07rem + 0.63vw), 1.83rem);
+  --step-2: clamp(1.44rem, calc(1.32rem + 0.62vw), 2.06rem);
+  --step-3: clamp(1.73rem, calc(1.61rem + 0.59vw), 2.31rem);
+  --step-4: clamp(2.07rem, calc(1.97rem + 0.53vw), 2.6rem);
 }
 
 :root {
@@ -36,6 +36,8 @@
   --color-hamburger-expanded: var(--color-light);
   --color-hamburger-collapsed: var(--color-dark);
   --color-navbar-text: var(--color-dark);
+
+  --side-padding: max(10vw, 2rem);
 }
 
 *,
