@@ -9,30 +9,28 @@
         <span>February 2022 - July 2022</span>
         <br />
         <p>
-          I built a cross-platform sports challenges app using Quasar and Firebase. This
-          app was graded a 9/10.
+          I built a cross-platform sports challenges app using Quasar and
+          Firebase. This app was graded a 9/10.
         </p>
       </article>
       <article class="experience-card">
         <h1>DOEN Horeca</h1>
         <span>Fullstack developer</span>
-        <br />
         <span>March 2021 - May 2022</span>
-        <br />
         <p>
-          I built a recruitment system from the ground up while learning VueJS at the same
-          time. After that I was adding new features and fixing bugs.
+          I built a recruitment system from the ground up while learning VueJS
+          at the same time. After that I was adding new features and fixing
+          bugs.
         </p>
       </article>
       <article class="experience-card">
         <h1>DAF Trucks</h1>
         <span>Software Engineering intern</span>
-        <br />
         <span>September 2018 - July 2022</span>
-        <br />
         <p>
-          I built a recruitment system from the ground up while learning VueJS at the same
-          time. After that I was adding new features and fixing bugs.
+          I built a recruitment system from the ground up while learning VueJS
+          at the same time. After that I was adding new features and fixing
+          bugs.
         </p>
       </article>
     </div>

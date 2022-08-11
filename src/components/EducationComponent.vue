@@ -5,23 +5,19 @@
       <article class="education-card">
         <h1>Fontys University of Applied Sciences</h1>
         <span>BSc ICT & Software Engineering</span>
-        <br />
         <span>September 2018 - July 2022</span>
-        <br />
         <p>
-          I studied software engineering and learned various ICT skills by studying theory
-          and doing projects
+          I studied software engineering and learned various ICT skills by
+          studying theory and doing projects
         </p>
       </article>
       <article class="education-card">
         <h1>Haaga-Helia of Applied Sciences</h1>
         <span>Exchange semester</span>
-        <br />
         <span>Augustus 2021 - December 2021</span>
-        <br />
         <p>
-          I went on an exchange semester to Finland to take up various courses in business
-          IT
+          I went on an exchange semester to Finland to take up various courses
+          in business IT
         </p>
       </article>
     </div>

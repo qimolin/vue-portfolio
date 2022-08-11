@@ -121,7 +121,8 @@ import GitlabIcon from "@/components/icons/GitlabIcon.vue";
   align-items: center;
   width: 50px;
   height: 50px;
-  box-shadow: -4px -4px 10px 6px rgba(0, 0, 0, 0.05), 4px 4px 10px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: -4px -4px 10px 6px rgba(0, 0, 0, 0.05),
+    4px 4px 10px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 .icon {
@@ -157,8 +158,8 @@ import GitlabIcon from "@/components/icons/GitlabIcon.vue";
     padding-inline: var(--side-padding);
   }
   .icon-card {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
   }
   .icon {
     width: 50px;

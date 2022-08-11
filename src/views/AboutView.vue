@@ -11,11 +11,12 @@
     <section id="summary" class="summary">
       <h1>Summary</h1>
       <p>
-        Hi, my name is Qi Mo Lin. Born and raised in Eindhoven, the Netherlands. I am
-        {{ age }}, software developer and ICT & Software Engineering graduate. I am
-        currently pursuing a Masters degree in Computer Science. I like to learn new
-        things and solve problems. During my free time I like to play sports and spend
-        time with family.
+        Hi, my name is Qi Mo Lin. Born and raised in Eindhoven, the Netherlands.
+        I am
+        {{ age }}, software developer and ICT & Software Engineering graduate. I
+        am currently pursuing a master's degree in Computer Science. I like to
+        learn new things and solve problems. During my free time I like to play
+        sports and spend time with family.
       </p>
     </section>
     <TechComponent />

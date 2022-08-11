@@ -3,7 +3,10 @@
     <section class="first-section">
       <article class="first-section-article">
         <h1>I'm Qi Mo Lin</h1>
-        <h2 class="description typewriter-effect" aria-label="Fullstack Developer"></h2>
+        <h2
+          class="description typewriter-effect"
+          aria-label="Fullstack Developer"
+        ></h2>
         <hr class="divider" />
       </article>
       <img class="qimo-img" src="@/assets/qi_mo_lin.jpg" />
@@ -58,7 +61,7 @@ onMounted(() => {
 
 <style scoped>
 .first-section {
-  height: 70vh;
+  height: 65vh;
 }
 .first-section-article > .description {
   font-size: var(--step-2);
