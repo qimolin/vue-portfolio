@@ -6,31 +6,35 @@
       <div class="icon-cards-wrapper">
         <div class="icon-card">
           <font-awesome-icon
-            style="color: #e44d26; width: 42px; height: 42px"
+            class="icon"
+            style="color: #e44d26"
             icon="fa-brands fa-html5"
           />
         </div>
         <div class="icon-card">
           <font-awesome-icon
-            style="color: #264de4; width: 42px; height: 42px"
+            class="icon"
+            style="color: #264de4"
             icon="fa-brands fa-css3-alt"
           />
         </div>
         <div class="icon-card">
           <font-awesome-icon
-            style="color: #f7df1e; width: 42px; height: 42px"
+            class="icon"
+            style="color: #f7df1e"
             icon="fa-brands fa-js-square"
           />
         </div>
         <div class="icon-card">
-          <TypeScriptIcon />
+          <TypeScriptIcon class="icon" />
         </div>
         <div class="icon-card">
-          <VueIcon />
+          <VueIcon class="icon" />
         </div>
         <div class="icon-card">
           <font-awesome-icon
-            style="color: #1b769c; width: 42px; height: 42px"
+            class="icon"
+            style="color: #1b769c"
             icon="fa-brands fa-wordpress"
           />
         </div>
@@ -39,40 +43,39 @@
       <div class="icon-cards-wrapper">
         <div class="icon-card">
           <font-awesome-icon
-            style="color: #83cd29; width: 42px; height: 42px"
+            class="icon"
+            style="color: #83cd29"
             icon="fa-brands fa-node-js"
           />
         </div>
         <div class="icon-card">
-          <CSharpIcon />
+          <CSharpIcon class="icon" />
         </div>
         <div class="icon-card">
-          <JavaIcon />
+          <JavaIcon class="icon" />
         </div>
         <div class="icon-card">
-          <PythonIcon />
+          <PythonIcon class="icon" />
         </div>
         <div class="icon-card">
-          <MySQLIcon />
+          <MySQLIcon class="icon" />
         </div>
         <div class="icon-card">
-          <FirebaseIcon />
+          <FirebaseIcon class="icon" />
         </div>
       </div>
       <h2>Tooling</h2>
       <div class="icon-cards-wrapper">
         <div class="icon-card">
-          <font-awesome-icon
-            style="width: 42px; height: 42px"
-            icon="fa-brands fa-github"
-          />
+          <font-awesome-icon class="icon" icon="fa-brands fa-github" />
         </div>
         <div class="icon-card">
-          <GitlabIcon />
+          <GitlabIcon class="icon" />
         </div>
         <div class="icon-card">
           <font-awesome-icon
-            style="color: #2396ed; width: 42px; height: 42px"
+            class="icon"
+            style="color: #2396ed"
             icon="fa-brands fa-docker"
           />
         </div>
@@ -116,15 +119,27 @@ import GitlabIcon from "@/components/icons/GitlabIcon.vue";
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   box-shadow: -4px -4px 10px 6px rgba(0, 0, 0, 0.05), 4px 4px 10px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+.icon {
+  width: 30px;
+  height: 30px;
 }
 @media (min-width: 650px) {
   .icon-cards-wrapper {
     display: flex;
     flex-direction: row;
+  }
+  .icon-card {
+    width: 60px;
+    height: 60px;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
   }
 }
 @media (min-width: 1025px) {
@@ -140,6 +155,14 @@ import GitlabIcon from "@/components/icons/GitlabIcon.vue";
     flex-direction: row;
     justify-content: left;
     padding-inline: var(--side-padding);
+  }
+  .icon-card {
+    width: 75px;
+    height: 75px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
   }
 }
 </style>

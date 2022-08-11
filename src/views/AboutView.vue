@@ -10,11 +10,10 @@
     <section class="summary">
       <h1>Summary</h1>
       <p>
-        Hi, my name is Qi Mo Lin. I am a 21 year old software developer and ICT
-        & Software Engineering graduate. I am currently pursuing a Masters
-        degree in Computer Science. I really like to learn new things and solve
-        problems. During my free time I like to play sports and spend time with
-        family.
+        Hi, my name is Qi Mo Lin. I am {{ age }}, software developer and ICT & Software
+        Engineering graduate. I am currently pursuing a Masters degree in Computer
+        Science. I really like to learn new things and solve problems. During my free time
+        I like to play sports and spend time with family.
       </p>
     </section>
     <TechComponent />
@@ -27,6 +26,9 @@
 import TechComponent from "@/components/TechComponent.vue";
 import ExperienceComponent from "@/components/ExperienceComponent.vue";
 import EducationComponent from "@/components/EducationComponent.vue";
+import { useAge } from "@/composables/useAge";
+
+const { age } = useAge();
 </script>
 
 <style scoped>

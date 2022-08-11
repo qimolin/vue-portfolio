@@ -9,8 +9,8 @@
         <span>September 2018 - July 2022</span>
         <br />
         <p>
-          I studied software engineering and learned various ICT skills like
-          programming and Scrum
+          I studied software engineering and learned various ICT skills by studying theory
+          and doing projects
         </p>
       </article>
       <article class="education-card">
@@ -20,9 +20,8 @@
         <span>Augustus 2021 - December 2021</span>
         <br />
         <p>
-          During my Bachelors I went on an exchange semester to Finland to take
-          up courses in SAP, project management, internationalization &
-          globalization, self marketing
+          I went on an exchange semester to Finland to take up various courses in business
+          IT
         </p>
       </article>
     </div>
@@ -53,40 +52,55 @@
   flex-direction: column;
   justify-content: center;
   min-width: 200px;
-  max-width: 350px;
+  max-width: 250px;
   height: 200px;
   padding: 2rem;
   background-color: var(--color-light);
-  box-shadow: 4px 4px 6px var(--color-divider-light-bg);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
   border-radius: 15px;
+  color: var(--color-text-light-bg);
 }
 .education-card > h1 {
   color: var(--color-divider-light-bg);
   font-size: var(--step-0);
-}
-.education-card span {
-  color: var(--color-text-light-bg);
-  font-size: var(--step--2);
-  font-style: italic;
   padding-bottom: 0.2rem;
 }
+.education-card span {
+  font-size: var(--step--2);
+  font-style: italic;
+  padding-bottom: 0.1rem;
+}
 .education-card p {
-  color: var(--color-text-light-bg);
   font-size: var(--step--2);
 }
-
+@media (min-width: 650px) {
+  .education-card {
+    min-width: 250px;
+    max-width: 300px;
+    height: 200px;
+  }
+}
 @media (min-width: 1025px) {
   .education > h1 {
     text-align: left;
     padding-inline: var(--side-padding);
   }
   .education-card {
+    min-width: 250px;
+    max-width: 350px;
     height: 250px;
     text-align: left;
   }
   .education > div {
     flex-direction: row;
     justify-content: left;
+  }
+}
+@media (min-width: 1720px) {
+  .education-card {
+    max-width: 350px;
+    height: 300px;
+    text-align: left;
   }
 }
 </style>

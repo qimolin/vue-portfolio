@@ -9,8 +9,8 @@
         <span>February 2022 - July 2022</span>
         <br />
         <p>
-          I built a cross-platform sports challenges app using Quasar and
-          Firebase. This app was graded a 9/10.
+          I built a cross-platform sports challenges app using Quasar and Firebase. This
+          app was graded a 9/10.
         </p>
       </article>
       <article class="experience-card">
@@ -20,9 +20,8 @@
         <span>March 2021 - May 2022</span>
         <br />
         <p>
-          I built a recruitment system from the ground up while learning VueJS
-          at the same time. After that I was adding new features and fixing
-          bugs.
+          I built a recruitment system from the ground up while learning VueJS at the same
+          time. After that I was adding new features and fixing bugs.
         </p>
       </article>
       <article class="experience-card">
@@ -32,9 +31,8 @@
         <span>September 2018 - July 2022</span>
         <br />
         <p>
-          I built a recruitment system from the ground up while learning VueJS
-          at the same time. After that I was adding new features and fixing
-          bugs.
+          I built a recruitment system from the ground up while learning VueJS at the same
+          time. After that I was adding new features and fixing bugs.
         </p>
       </article>
     </div>
@@ -66,25 +64,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 220px;
+  max-width: 270px;
   height: 200px;
   padding: 2rem;
   background-color: var(--color-light);
-  box-shadow: 4px 4px 6px var(--color-divider-dark-bg);
   border-radius: 15px;
+  color: var(--color-text-light-bg);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
 }
 .experience-card > h1 {
   color: var(--color-divider-dark-bg);
   font-size: var(--step-0);
+  padding-bottom: 0.2rem;
 }
 .experience-card span {
-  color: var(--color-text-light-bg);
   font-size: var(--step--2);
   font-style: italic;
+  padding-bottom: 0.1rem;
 }
 .experience-card p {
-  color: var(--color-text-light-bg);
   font-size: var(--step--2);
 }
 
@@ -97,11 +96,13 @@
     flex-direction: row;
     justify-content: left;
   }
-  .experience-card > h1 {
+  .experience-card {
+    min-width: 250px;
+    max-width: 350px;
+    height: 250px;
     text-align: left;
   }
-  .experience-card {
-    height: 250px;
+  .experience-card > h1 {
     text-align: left;
   }
 }

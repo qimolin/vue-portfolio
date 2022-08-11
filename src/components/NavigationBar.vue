@@ -108,10 +108,11 @@ function setHamburgerExpanded() {
     color: var(--color-navbar-text);
   }
   #toggle-menu {
+    position: absolute;
     display: block;
     width: 2rem;
     aspect-ratio: 1;
-    position: absolute;
+
     top: 3.3rem;
     right: 2rem;
     cursor: pointer;
