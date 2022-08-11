@@ -6,12 +6,13 @@
         <hr class="divider" />
       </article>
       <img class="svg-image" src="@/assets/my_app.svg" />
+      <a class="scroll-down" href="#projects"></a>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <a href="https://github.com/qimolin/nuxt-student-portfolio">
         <article class="project-card">
           <h1>Nuxt Student Portfolio</h1>
-          <p>Portfolio website created during my bachelor's using Nuxt & TailwindCSS</p>
+          <p>Portfolio website created during my bachelor's using Nuxt and TailwindCSS</p>
           <div class="pill-row">
             <span class="pill vue">Vue</span>
             <span class="pill javascript">JavaScript</span>
@@ -65,7 +66,7 @@
   height: 150px;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
-.project-card:hover {
+a > .project-card:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   cursor: pointer;
 }
@@ -88,7 +89,7 @@
 }
 .pill {
   color: var(--color-text-light-bg);
-  padding-inline: 2vw;
+  padding-inline: 1vw;
   border-radius: 10px;
 }
 .vue {

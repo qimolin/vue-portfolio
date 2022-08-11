@@ -61,6 +61,7 @@ onMounted(() => {
   height: 70vh;
 }
 .first-section-article > .description {
+  font-size: var(--step-2);
   text-align: center;
   margin-bottom: 12px;
   color: var(--color-primary);
