@@ -5,9 +5,7 @@
       <article class="experience-card">
         <h1>Sogeti</h1>
         <span>Frontend developer intern</span>
-        <br />
         <span>February 2022 - July 2022</span>
-        <br />
         <p>
           I built a cross-platform sports challenges app using Quasar and
           Firebase. This app was graded a 9/10.
