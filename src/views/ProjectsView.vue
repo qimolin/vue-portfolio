@@ -9,6 +9,15 @@
       <a class="scroll-down" href="#projects"></a>
     </section>
     <section id="projects" class="projects">
+      <a href="https://deepalpha.tech/">
+        <article class="project-card">
+          <h1>Company website</h1>
+          <p>Deep Alpha Company website created using WordPress</p>
+          <div class="pill-row">
+            <span class="pill wordpress">WordPress</span>
+          </div>
+        </article>
+      </a>
       <a href="https://github.com/qimolin/nuxt-student-portfolio">
         <article class="project-card">
           <h1>Nuxt Student Portfolio</h1>
@@ -63,7 +72,7 @@
 .project-card {
   background-color: var(--color-dark);
   border-radius: 15px;
-  color: var(--color-text-dark-bg);
+  color: var(--color-light);
   padding: 2rem;
   min-width: 220px;
   max-width: 270px;
@@ -75,7 +84,7 @@ a > .project-card:hover {
   cursor: pointer;
 }
 .project-card > h1 {
-  color: var(--color-divider-dark-bg);
+  color: var(--color-primary);
   font-size: var(--step-0);
   padding-bottom: 0.2rem;
 }
@@ -92,9 +101,12 @@ a > .project-card:hover {
   gap: 0.3rem;
 }
 .pill {
-  color: var(--color-text-light-bg);
+  color: var(--color-dark);
   padding-inline: 1vw;
   border-radius: 10px;
+}
+.wordpress {
+  background: #00769d;
 }
 .vue {
   background: #41b883;

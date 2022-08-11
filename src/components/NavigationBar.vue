@@ -32,7 +32,8 @@
 function setHamburgerExpanded() {
   const hamburgerBtn = document.querySelector(".hamburger");
   const ariaExpanded = hamburgerBtn?.getAttribute("aria-expanded");
-  if (ariaExpanded === "true") hamburgerBtn?.setAttribute("aria-expanded", "false");
+  if (ariaExpanded === "true")
+    hamburgerBtn?.setAttribute("aria-expanded", "false");
   else hamburgerBtn?.setAttribute("aria-expanded", "true");
 }
 </script>
@@ -63,7 +64,7 @@ function setHamburgerExpanded() {
 }
 .nav-list li > a {
   font-size: 20px;
-  color: var(--color-text-dark-bg);
+  color: var(--color-light);
 }
 .nav-list li > a:hover {
   color: var(--color-primary);
@@ -105,7 +106,7 @@ function setHamburgerExpanded() {
   }
   .nav-list li > a {
     z-index: 9999;
-    color: var(--color-navbar-text);
+    color: var(--color-dark);
   }
   #toggle-menu {
     position: absolute;
@@ -137,7 +138,7 @@ function setHamburgerExpanded() {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: var(--color-hamburger-expanded);
+    background: var(--color-light);
     border-radius: 3px;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -150,16 +151,16 @@ function setHamburgerExpanded() {
     transform-origin: 0% 100%;
   }
   #toggle-menu:checked ~ .hamburger span:nth-child(1) {
-    background: var(--color-hamburger-collapsed);
+    background: var(--color-dark);
     transform: rotate(45deg) translate(2.5px, -1.5px);
   }
   #toggle-menu:checked ~ .hamburger span:nth-child(2) {
-    background: var(--color-hamburger-collapsed);
+    background: var(--color-dark);
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
   #toggle-menu:checked ~ .hamburger span:nth-child(3) {
-    background: var(--color-hamburger-collapsed);
+    background: var(--color-dark);
     transform: rotate(-45deg) translate(-4px, 2.5px);
   }
   #toggle-menu:checked ~ nav .nav-list {

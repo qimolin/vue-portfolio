@@ -39,7 +39,7 @@
   background: var(--color-dark);
   text-align: center;
   padding-inline: max(5vw, 2rem);
-  color: var(--color-text-dark-bg);
+  color: var(--color-light);
   padding: max(5vh, 1rem) 0;
 }
 .experience > h1 {
@@ -65,11 +65,11 @@
   padding: 2rem;
   background-color: var(--color-light);
   border-radius: 15px;
-  color: var(--color-text-light-bg);
+  color: var(--color-dark);
   box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
 }
 .experience-card > h1 {
-  color: var(--color-divider-dark-bg);
+  color: var(--color-primary);
   font-size: var(--step-0);
   padding-bottom: 0.2rem;
 }

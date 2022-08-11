@@ -17,7 +17,7 @@
         <span>Augustus 2021 - December 2021</span>
         <p>
           I went on an exchange semester to Finland to take up various courses
-          in business IT
+          in business IT and partook in an IoT project.
         </p>
       </article>
     </div>
@@ -51,13 +51,13 @@
   max-width: 250px;
   height: 200px;
   padding: 2rem;
-  background-color: var(--color-light);
+  background-color: var(--color-dark);
   box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
   border-radius: 15px;
-  color: var(--color-text-light-bg);
+  color: var(--color-light);
 }
 .education-card > h1 {
-  color: var(--color-divider-light-bg);
+  color: var(--color-primary);
   font-size: var(--step-0);
   padding-bottom: 0.2rem;
 }

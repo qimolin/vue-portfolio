@@ -86,7 +86,7 @@ onMounted(() => {
 .qimo-img {
   width: min(65%, 350px);
   border-radius: 50%;
-  border: solid 3px var(--color-divider-dark-bg);
+  border: solid 3px var(--color-primary);
 }
 @media (min-width: 1025px) {
   .first-section-article > .description {

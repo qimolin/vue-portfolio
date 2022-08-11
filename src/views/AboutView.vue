@@ -38,7 +38,7 @@ const { age } = useAge();
 .qimo-img {
   width: min(50%, 300px);
   border-radius: 15px;
-  box-shadow: 2px 4px 4px var(--color-divider-dark-bg);
+  box-shadow: 2px 4px 4px var(--color-primary);
 }
 .summary {
   background: var(--color-light);

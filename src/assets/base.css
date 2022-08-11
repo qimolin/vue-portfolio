@@ -16,6 +16,10 @@
   --color-light-s: 0%;
   --color-light-l: 100%;
 
+  --color-navbar: hsla(var(--color-light-h), var(--color-light-s), var(--color-light-l), 0.8);
+
+  --side-padding: max(10vw, 2rem);
+
   --step--3: clamp(0.58rem, calc(0.47rem + 0.56vw), 1.14rem);
   --step--2: clamp(0.69rem, calc(0.58rem + 0.59vw), 1.28rem);
   --step--1: clamp(0.83rem, calc(0.71rem + 0.61vw), 1.44rem);
@@ -24,20 +28,6 @@
   --step-2: clamp(1.44rem, calc(1.32rem + 0.62vw), 2.06rem);
   --step-3: clamp(1.73rem, calc(1.61rem + 0.59vw), 2.31rem);
   --step-4: clamp(2.07rem, calc(1.97rem + 0.53vw), 2.6rem);
-}
-
-:root {
-  --color-text-dark-bg: var(--color-light);
-  --color-text-light-bg: var(--color-dark);
-  --color-divider-dark-bg: var(--color-primary);
-  --color-divider-light-bg: var(--color-secondary);
-
-  --color-navbar: hsla(var(--color-light-h), var(--color-light-s), var(--color-light-l), 0.8);
-  --color-hamburger-expanded: var(--color-light);
-  --color-hamburger-collapsed: var(--color-dark);
-  --color-navbar-text: var(--color-dark);
-
-  --side-padding: max(10vw, 2rem);
 }
 
 *,

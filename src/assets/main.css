@@ -31,7 +31,7 @@ p {
 }
 .first-section h1 {
   text-align: center;
-  color: var(--color-text-dark-bg);
+  color: var(--color-light);
   font-size: var(--step-4);
   font-weight: bold;
   margin-bottom: 15px;
@@ -44,7 +44,7 @@ p {
   width: min(150px, 75px);
   height: max(10px, 15px);
   margin-bottom: max(7px, 14px);
-  background-color: var(--color-divider-dark-bg);
+  background-color: var(--color-primary);
   border: none;
   border-radius: 10px;
 }
