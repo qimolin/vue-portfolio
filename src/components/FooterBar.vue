@@ -23,7 +23,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: max(2vw, 2rem);
+  padding-inline: 6rem;
   height: max(12vh, 2rem);
   width: 100%;
   color: var(--color-text-dark-bg);
