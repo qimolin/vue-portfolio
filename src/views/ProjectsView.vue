@@ -2,7 +2,7 @@
   <main>
     <section class="first-section">
       <article>
-        <h1>My Projects</h1>
+        <h1>Public Projects</h1>
         <hr class="divider" />
       </article>
       <img class="svg-image" src="@/assets/my_app.svg" />

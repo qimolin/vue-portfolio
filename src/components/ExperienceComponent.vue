@@ -7,8 +7,8 @@
         <span>Frontend developer intern</span>
         <span>February 2022 - July 2022</span>
         <p>
-          I built a cross-platform sports challenges app using Quasar and
-          Firebase. This app was graded a 9/10.
+          I successfully built a cross-platform sports challenges app using
+          Quasar and Firebase. This app was graded a 9/10.
         </p>
       </article>
       <article class="experience-card">
@@ -26,9 +26,8 @@
         <span>Software Engineering intern</span>
         <span>September 2018 - July 2022</span>
         <p>
-          I built a recruitment system from the ground up while learning VueJS
-          at the same time. After that I was adding new features and fixing
-          bugs.
+          Performed research on how to display Simulink models in Bitbucket
+          Successfully created a proof of concept. This was graded a 9/10.
         </p>
       </article>
     </div>
