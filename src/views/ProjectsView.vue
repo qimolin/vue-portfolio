@@ -12,7 +12,7 @@
       <a href="https://deepalpha.tech/">
         <article class="project-card">
           <h1>Company website</h1>
-          <p>Deep Alpha Company website created using WordPress</p>
+          <p>Deep Alpha company website created using WordPress</p>
           <div class="pill-row">
             <span class="pill wordpress">WordPress</span>
           </div>
