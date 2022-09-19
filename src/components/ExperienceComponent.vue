@@ -24,7 +24,7 @@
       <article class="experience-card">
         <h1>DAF Trucks</h1>
         <span>Software Engineering intern</span>
-        <span>September 2018 - July 2022</span>
+        <span>September 2020 - January 2021</span>
         <p>
           Performed research on how to display Simulink models in Bitbucket
           Successfully created a proof of concept. This was graded a 9/10.

@@ -7,8 +7,8 @@
         <span>BSc ICT & Software Engineering</span>
         <span>September 2018 - July 2022</span>
         <p>
-          I studied software engineering and learned various ICT skills by
-          studying theory and doing projects
+          I studied software engineering and learned various ICT skills by studying theory
+          and doing projects.
         </p>
       </article>
       <article class="education-card">
@@ -16,8 +16,8 @@
         <span>Exchange semester</span>
         <span>Augustus 2021 - December 2021</span>
         <p>
-          I went on an exchange semester to Finland to take up various courses
-          in business IT and partook in an IoT project.
+          I went on an exchange semester to Finland to take up various courses in business
+          IT and partook in an IoT project.
         </p>
       </article>
     </div>
