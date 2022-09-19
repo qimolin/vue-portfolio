@@ -29,13 +29,37 @@
 </template>
 
 <script setup lang="ts">
+import { onBeforeUnmount, onMounted } from "vue";
+
 function setHamburgerExpanded() {
   const hamburgerBtn = document.querySelector(".hamburger");
   const ariaExpanded = hamburgerBtn?.getAttribute("aria-expanded");
-  if (ariaExpanded === "true")
-    hamburgerBtn?.setAttribute("aria-expanded", "false");
+  if (ariaExpanded === "true") hamburgerBtn?.setAttribute("aria-expanded", "false");
   else hamburgerBtn?.setAttribute("aria-expanded", "true");
 }
+
+function handleClickOnLeftEvent(e: MouseEvent) {
+  const input = document.querySelector("#toggle-menu") as HTMLInputElement;
+  if (e.target != input) {
+    const clickTarget = e.currentTarget as HTMLBodyElement;
+    const clickTargetWidth = clickTarget.offsetWidth;
+    const xCoordInClickTarget = e.clientX - clickTarget.getBoundingClientRect().left;
+    if (0.4 * clickTargetWidth > xCoordInClickTarget) {
+      const input = document.querySelector("#toggle-menu") as HTMLInputElement;
+      if (input.checked) {
+        input.checked = !input.checked;
+      }
+    }
+  }
+}
+
+onMounted(() => {
+  document.querySelector("body")?.addEventListener("click", handleClickOnLeftEvent);
+});
+
+onBeforeUnmount(() => {
+  document.querySelector("body")?.removeEventListener("click", handleClickOnLeftEvent);
+});
 </script>
 
 <style scoped>
