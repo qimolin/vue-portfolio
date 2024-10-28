@@ -1,3 +1,3 @@
-const authorName = "Qi-Mo Lin";
+const authorName = 'Qi-Mo Lin'
 
-export { authorName };
+export { authorName }

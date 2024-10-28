@@ -1,9 +1,9 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faHeart, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHeart, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
   faGithub,
@@ -14,14 +14,14 @@ import {
   faWordpress,
   faNodeJs,
   faDocker,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import "./assets/main.css";
+import './assets/main.css'
 
-const app = createApp(App);
+const app = createApp(App)
 
-app.use(router);
+app.use(router)
 
 library.add(
   faHeart,
@@ -34,9 +34,9 @@ library.add(
   faJsSquare,
   faWordpress,
   faNodeJs,
-  faDocker
-);
+  faDocker,
+)
 
-app.component("font-awesome-icon", FontAwesomeIcon);
+app.component('font-awesome-icon', FontAwesomeIcon)
 
-app.mount("#app");
+app.mount('#app')

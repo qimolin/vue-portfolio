@@ -21,7 +21,10 @@
       <a href="https://github.com/qimolin/nuxt-student-portfolio">
         <article class="project-card">
           <h1>Nuxt Student Portfolio</h1>
-          <p>Portfolio website created during my bachelor's using Nuxt and TailwindCSS</p>
+          <p>
+            Portfolio website created during my bachelor's using Nuxt and
+            TailwindCSS
+          </p>
           <div class="pill-row">
             <span class="pill vue">Vue</span>
             <span class="pill javascript">JavaScript</span>
@@ -32,7 +35,8 @@
         <article class="project-card">
           <h1>Logic Proposition Parser</h1>
           <p>
-            App to parse propositional logical formulas using OO design and C# Winforms
+            App to parse propositional logical formulas using OO design and C#
+            Winforms
           </p>
           <div>
             <span class="pill c-sharp">C#</span>
@@ -119,7 +123,7 @@ a > .project-card:hover {
 @media (min-width: 650px) {
   .projects {
     display: grid;
-    grid-template-areas: "1fr 1fr";
+    grid-template-areas: '1fr 1fr';
     justify-content: center;
   }
   .project-card {
@@ -131,7 +135,7 @@ a > .project-card:hover {
 @media (min-width: 1025px) {
   .projects {
     display: grid;
-    grid-template-areas: "1fr 1fr 1fr";
+    grid-template-areas: '1fr 1fr 1fr';
     justify-content: center;
   }
   .project-card {

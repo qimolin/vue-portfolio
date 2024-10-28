@@ -25,13 +25,13 @@
 </template>
 
 <script setup lang="ts">
-import TechComponent from "@/components/TechComponent.vue";
-import ExperienceComponent from "@/components/ExperienceComponent.vue";
-import EducationComponent from "@/components/EducationComponent.vue";
-import { authorName } from "../constants";
-import { useAge } from "@/composables/useAge";
+import TechComponent from '@/components/TechComponent.vue'
+import ExperienceComponent from '@/components/ExperienceComponent.vue'
+import EducationComponent from '@/components/EducationComponent.vue'
+import { authorName } from '../constants'
+import { useAge } from '@/composables/useAge'
 
-const { age } = useAge();
+const { age } = useAge()
 </script>
 
 <style scoped>

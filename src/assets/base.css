@@ -16,7 +16,12 @@
   --color-light-s: 0%;
   --color-light-l: 100%;
 
-  --color-navbar: hsla(var(--color-light-h), var(--color-light-s), var(--color-light-l), 0.8);
+  --color-navbar: hsla(
+    var(--color-light-h),
+    var(--color-light-s),
+    var(--color-light-l),
+    0.8
+  );
 
   --side-padding: max(10vw, 2rem);
 

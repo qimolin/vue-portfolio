@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { authorName } from "../constants";
+import { authorName } from '../constants'
 </script>
 
 <style scoped>

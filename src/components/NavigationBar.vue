@@ -29,37 +29,43 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted } from "vue";
+import { onBeforeUnmount, onMounted } from 'vue'
 
 function setHamburgerExpanded() {
-  const hamburgerBtn = document.querySelector(".hamburger");
-  const ariaExpanded = hamburgerBtn?.getAttribute("aria-expanded");
-  if (ariaExpanded === "true") hamburgerBtn?.setAttribute("aria-expanded", "false");
-  else hamburgerBtn?.setAttribute("aria-expanded", "true");
+  const hamburgerBtn = document.querySelector('.hamburger')
+  const ariaExpanded = hamburgerBtn?.getAttribute('aria-expanded')
+  if (ariaExpanded === 'true')
+    hamburgerBtn?.setAttribute('aria-expanded', 'false')
+  else hamburgerBtn?.setAttribute('aria-expanded', 'true')
 }
 
 function handleClickOnLeftEvent(e: MouseEvent) {
-  const input = document.querySelector("#toggle-menu") as HTMLInputElement;
+  const input = document.querySelector('#toggle-menu') as HTMLInputElement
   if (e.target != input) {
-    const clickTarget = e.currentTarget as HTMLBodyElement;
-    const clickTargetWidth = clickTarget.offsetWidth;
-    const xCoordInClickTarget = e.clientX - clickTarget.getBoundingClientRect().left;
+    const clickTarget = e.currentTarget as HTMLBodyElement
+    const clickTargetWidth = clickTarget.offsetWidth
+    const xCoordInClickTarget =
+      e.clientX - clickTarget.getBoundingClientRect().left
     if (0.4 * clickTargetWidth > xCoordInClickTarget) {
-      const input = document.querySelector("#toggle-menu") as HTMLInputElement;
+      const input = document.querySelector('#toggle-menu') as HTMLInputElement
       if (input.checked) {
-        input.checked = !input.checked;
+        input.checked = !input.checked
       }
     }
   }
 }
 
 onMounted(() => {
-  document.querySelector("body")?.addEventListener("click", handleClickOnLeftEvent);
-});
+  document
+    .querySelector('body')
+    ?.addEventListener('click', handleClickOnLeftEvent)
+})
 
 onBeforeUnmount(() => {
-  document.querySelector("body")?.removeEventListener("click", handleClickOnLeftEvent);
-});
+  document
+    .querySelector('body')
+    ?.removeEventListener('click', handleClickOnLeftEvent)
+})
 </script>
 
 <style scoped>
@@ -94,7 +100,7 @@ onBeforeUnmount(() => {
   color: var(--color-primary);
 }
 .nav-list li > a:hover:after {
-  content: "";
+  content: '';
   float: left;
   background-color: var(--color-primary);
   width: 100%;
@@ -165,8 +171,10 @@ onBeforeUnmount(() => {
     background: var(--color-light);
     border-radius: 3px;
     transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition:
+      transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      opacity 0.55s ease;
   }
   .hamburger > span:first-child {
     transform-origin: 0% 0%;

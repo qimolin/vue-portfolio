@@ -85,14 +85,14 @@
 </template>
 
 <script setup lang="ts">
-import TypeScriptIcon from "@/components/icons/TypeScriptIcon.vue";
-import CSharpIcon from "@/components/icons/CSharpIcon.vue";
-import VueIcon from "@/components/icons/VueIcon.vue";
-import JavaIcon from "@/components/icons/JavaIcon.vue";
-import PythonIcon from "@/components/icons/PythonIcon.vue";
-import MySQLIcon from "@/components/icons/MySQLIcon.vue";
-import FirebaseIcon from "@/components/icons/FirebaseIcon.vue";
-import GitlabIcon from "@/components/icons/GitlabIcon.vue";
+import TypeScriptIcon from '@/components/icons/TypeScriptIcon.vue'
+import CSharpIcon from '@/components/icons/CSharpIcon.vue'
+import VueIcon from '@/components/icons/VueIcon.vue'
+import JavaIcon from '@/components/icons/JavaIcon.vue'
+import PythonIcon from '@/components/icons/PythonIcon.vue'
+import MySQLIcon from '@/components/icons/MySQLIcon.vue'
+import FirebaseIcon from '@/components/icons/FirebaseIcon.vue'
+import GitlabIcon from '@/components/icons/GitlabIcon.vue'
 </script>
 
 <style scoped>
@@ -110,7 +110,7 @@ import GitlabIcon from "@/components/icons/GitlabIcon.vue";
 }
 .icon-cards-wrapper {
   display: grid;
-  grid-template-areas: "1fr 1fr 1fr";
+  grid-template-areas: '1fr 1fr 1fr';
   justify-content: center;
   gap: 1rem;
   padding-bottom: 15px;
@@ -121,7 +121,8 @@ import GitlabIcon from "@/components/icons/GitlabIcon.vue";
   align-items: center;
   width: 50px;
   height: 50px;
-  box-shadow: -4px -4px 10px 6px rgba(0, 0, 0, 0.05),
+  box-shadow:
+    -4px -4px 10px 6px rgba(0, 0, 0, 0.05),
     4px 4px 10px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }

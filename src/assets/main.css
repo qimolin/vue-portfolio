@@ -1,13 +1,13 @@
-@import "./base.css";
+@import './base.css';
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,200;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,200;1,400&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-rendering: optimizeLegibility;
   background: var(--color-dark);
   min-height: 100vh;
@@ -81,7 +81,7 @@ p {
     cursor: pointer;
   }
   .scroll-down::before {
-    content: "";
+    content: '';
     position: absolute;
     margin: auto;
     left: 0;

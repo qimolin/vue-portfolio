@@ -18,16 +18,16 @@
 </template>
 
 <script setup lang="ts">
-import { authorName } from "../constants";
+import { authorName } from '../constants'
 
 const jobTitles = [
-  "Software Developer",
-  "Web Developer",
-  "Frontend Developer",
-  "Backend Developer",
-  "Fullstack Developer",
-  "MSc Student",
-];
+  'Software Developer',
+  'Web Developer',
+  'Frontend Developer',
+  'Backend Developer',
+  'Fullstack Developer',
+  'MSc Student',
+]
 </script>
 
 <style>
@@ -86,7 +86,8 @@ const jobTitles = [
 
   display: inline-block;
   width: 0%;
-  animation: cursor 0.8s step-end infinite,
+  animation:
+    cursor 0.8s step-end infinite,
     typing var(--animation-delay) steps(18) infinite alternate;
 }
 
