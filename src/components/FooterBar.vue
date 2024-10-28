@@ -1,6 +1,10 @@
 <template>
   <footer>
-    <p>Made with <font-awesome-icon icon="fa-solid fa-heart" /> by Qi Mo Lin</p>
+    <p>
+      Made with
+      <font-awesome-icon icon="fa-solid fa-heart" aria-label="Heart icon" /> by
+      {{ authorName }}
+    </p>
     <span class="icons-wrapper">
       <a href="mailto:info@qimolin.com"
         ><font-awesome-icon class="icon" icon="fa-solid fa-envelope"
@@ -17,6 +21,10 @@
     </span>
   </footer>
 </template>
+
+<script setup lang="ts">
+import { authorName } from "../constants";
+</script>
 
 <style scoped>
 footer {

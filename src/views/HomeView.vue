@@ -3,7 +3,7 @@
     <section class="first-section">
       <article>
         <h1 class="content">
-          <span>I am</span> Qi Mo Lin
+          <span>I am</span> {{ authorName }}
           <ol>
             <li v-for="jobTitle in jobTitles" :key="jobTitle">
               <span>{{ jobTitle }}</span>
@@ -18,6 +18,8 @@
 </template>
 
 <script setup lang="ts">
+import { authorName } from "../constants";
+
 const jobTitles = [
   "Software Developer",
   "Web Developer",

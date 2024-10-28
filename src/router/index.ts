@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import NotFound from "@/components/NotFound.vue";
+import { authorName } from "../constants";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,7 +28,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  document.title = `Qi Mo Lin - ${String(to.name)}`;
+  document.title = `${authorName} - ${String(to.name)}`;
   next();
 });
 
