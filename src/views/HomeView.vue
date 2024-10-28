@@ -6,7 +6,7 @@
         <h2 class="description typewriter-effect" aria-label="Fullstack Developer"></h2>
         <hr class="divider" />
       </article>
-      <img class="qimo-img" src="@/assets/qi_mo_lin.jpg" />
+      <img class="qimo-img" src="@/assets/qi_mo_lin.webp" />
     </section>
   </main>
 </template>

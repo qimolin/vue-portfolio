@@ -5,7 +5,7 @@
         <h1>About me</h1>
         <hr class="divider" />
       </article>
-      <img class="qimo-img" src="@/assets/qi_mo_lin_graduation.jpg" />
+      <img class="qimo-img" src="@/assets/qi_mo_lin_graduation.webp" />
       <a class="scroll-down" href="#summary"></a>
     </section>
     <section id="summary" class="summary">
