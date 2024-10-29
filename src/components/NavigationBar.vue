@@ -91,6 +91,7 @@ onBeforeUnmount(() => {
 .nav-list {
   display: flex;
   gap: 6rem;
+  z-index: 9;
 }
 .nav-list li > a {
   font-size: 20px;

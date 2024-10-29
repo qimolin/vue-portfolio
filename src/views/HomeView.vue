@@ -2,14 +2,12 @@
   <main>
     <section class="first-section">
       <article>
-        <h1 class="content">
-          <span>I am</span> {{ authorName }}
-          <ol>
-            <li v-for="jobTitle in jobTitles" :key="jobTitle">
-              <span>{{ jobTitle }}</span>
-            </li>
-          </ol>
-        </h1>
+        <h1 class="heading"><span>I am</span> {{ authorName }}</h1>
+        <ol class="job-list">
+          <li v-for="jobTitle in jobTitles" :key="jobTitle">
+            <span>{{ jobTitle }}</span>
+          </li>
+        </ol>
         <hr class="divider" />
       </article>
       <img class="qimo-img" src="@/assets/qi_mo_lin.webp" />
@@ -18,6 +16,7 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { authorName } from '../constants'
 
 const jobTitles = [
@@ -28,11 +27,17 @@ const jobTitles = [
   'Fullstack Developer',
   'MSc Student',
 ]
+
+onMounted(() => {
+  document.documentElement.style.setProperty(
+    '--job-count',
+    jobTitles.length.toString(),
+  )
+})
 </script>
 
 <style>
 :root {
-  --job-count: 6;
   --animation-delay: 3s;
 }
 </style>
@@ -49,14 +54,26 @@ const jobTitles = [
 .first-section-article h1 > span {
   color: var(--color-primary);
 }
-.content {
-  text-align: left;
+.heading {
+  text-align: center;
   letter-spacing: 0.15rem;
 }
-.content span {
+.heading span {
   color: var(--color-primary);
 }
-.content ol li {
+.job-list {
+  list-style: none;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: var(--step-4);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.job-list li {
   animation: slide calc(var(--job-count) * var(--animation-delay) * 2)
     steps(var(--job-count)) infinite;
 }
@@ -65,16 +82,7 @@ const jobTitles = [
     transform: translateY(calc(var(--job-count) * -100%));
   }
 }
-.content ol {
-  list-style: none;
-  height: 3.5rem;
-  line-height: 3.5rem;
-  overflow: hidden;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-}
-.content ol li span {
+.job-list li span {
   font-weight: 600;
   -webkit-text-fill-color: transparent;
   background-color: var(--color-primary);
@@ -104,6 +112,14 @@ const jobTitles = [
   70%,
   100% {
     width: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  .heading {
+    text-align: start;
+  }
+  .job-list {
+    align-items: flex-start;
   }
 }
 </style>
